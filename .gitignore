@@ -1,0 +1,168 @@
+# Spring Boot & Java
+*.class
+*.log
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle (si se usa en el futuro)
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# IDE - IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# IDE - Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# IDE - VS Code
+.vscode/
+
+# IDE - NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+spring.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Database
+*.db
+*.sqlite
+*.h2.db
+
+# Testing
+junit.xml
+test-results/
+test-output/
+*.log
+
+# Coverage reports
+/coverage/
+/.nyc_output/
+jacoco.exec
+*.exec
+
+# SonarQube
+.sonar/
+.sonarlint/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Application specific
+application-local.properties
+application-dev.properties
+application-secret.properties
+**/application-*.yml
+**/application-*.yaml
+!**/application.properties
+!**/application.yml
+!**/application-test.properties
+!**/application-test.yml
+
+# Docker
+Dockerfile.local
+docker-compose.override.yml
+.dockerignore
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Node modules (si se usa frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Security
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+keystore.*
+truststore.*
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Generated documentation
+docs/generated/
+javadoc/
+
+# Cache directories
+.cache/
+*.cache
+
+# Build artifacts específicos del proyecto
+/build/
+/dist/
+/lib/
+
+# Archivos de configuración local
+local.properties
+config/local/
