@@ -1,1 +1,5 @@
+com/acn/springboot/catalog/app/service/ProductServiceImplTest.class
+com/acn/springboot/catalog/app/repo/IProductoRepoTest.class
+com/acn/springboot/catalog/app/entity/ProductoTest.class
 com/acn/springboot/catalog/app/SpringBootCatalogApplicationTests.class
+com/acn/springboot/catalog/app/controllers/IndexControllerTest.class
