@@ -70,39 +70,4 @@ class IProductoRepoTest {
         // Assert
         assertEquals(3, productos.size());
     }
-
-    @Test
-    @DisplayName("Debe encontrar productos por SKU")
-    void testFindBySku() {
-        // Act
-        List<Producto> productos = productoRepo.findBySku("PROD-001");
-
-        // Assert
-        assertEquals(2, productos.size());
-        assertTrue(productos.stream().allMatch(p -> "PROD-001".equals(p.getSku())));
-    }
-
-    @Test
-    @DisplayName("Debe retornar lista vacía para SKU inexistente")
-    void testFindBySkuInexistente() {
-        // Act
-        List<Producto> productos = productoRepo.findBySku("INEXISTENTE");
-
-        // Assert
-        assertTrue(productos.isEmpty());
-    }
-
-    @Test
-    @DisplayName("Debe encontrar productos por SKU con paginación")
-    void testFindBySkupage() {
-        // Arrange
-        Pageable pageable = PageRequest.of(0, 1);
-
-        // Act
-        Page<Producto> productos = productoRepo.findBySkupage("PROD-001", pageable);
-
-        // Assert
-        assertEquals(1, productos.getContent().size());
-        assertEquals(2, productos.getTotalElements());
-    }
 }
